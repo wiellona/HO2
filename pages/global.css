@@ -1,0 +1,39 @@
+/* pages/globals.css atau src/globals.css, tergantung di mana Anda menaruhnya */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  @apply bg-primary text-white;
+}
+
+body {
+  @apply m-0 p-0;
+  font-family: "Merriweather", sans-serif;
+}
+
+.card {
+  @apply flex-none  mx-4 p-5 bg-darkgrey border-2 border-secondary rounded-lg shadow-md gap-2.5;
+}
+
+.card-image {
+  @apply w-32 h-32 object-cover rounded-t-lg;
+}
+
+.card-title {
+  @apply font-bold text-lightgrey text-5xl;
+}
+
+.card-description {
+  @apply text-lightgrey;
+}
+
+.card h2 {
+  @apply mt-0 pt-2 text-white bg-darkgrey mb-1.5 text-base;
+}
+
+.card p {
+  @apply text-xs bg-darkgrey mt-0;
+}
