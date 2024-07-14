@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Button } from "../Button";
 
 type CardProps = {
@@ -11,7 +10,7 @@ type CardProps = {
 
 function Card({ thumbnail, title, description, url }: CardProps) {
   return (
-    <div className="card w-72 h-80 shadow-md rounded overflow-hidden">
+    <div className="card w-72 h-80 shadow-md rounded overflow-hidden mb-2">
       <Image
         src={thumbnail}
         alt={title}
@@ -22,8 +21,8 @@ function Card({ thumbnail, title, description, url }: CardProps) {
       <div className="bg-darkgrey p-1">
         <h2 className="card-title">{title}</h2>
         <p className="card-description">{description}</p>
+        <Button url={url}>Learn more</Button> {/* Changed here */}
       </div>
-      <Link href={url}></Link>
     </div>
   );
 }

@@ -10,7 +10,7 @@
 }
 
 body {
-  @apply m-0 p-0;
+  @apply m-0 p-0 mb-16;
   font-family: "Merriweather", sans-serif;
 }
 
@@ -36,4 +36,12 @@ body {
 
 .card p {
   @apply text-xs bg-darkgrey mt-0;
+}
+
+.Hero {
+  @apply flex flex-col items-center justify-center h-screen bg-primary text-white;
+}
+
+.footer-container a {
+  @apply bg-darkgrey;
 }

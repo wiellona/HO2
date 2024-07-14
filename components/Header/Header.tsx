@@ -6,15 +6,15 @@ type NavItem = {
 };
 
 const navItems: NavItem[] = [
-  { url: "/", label: "zero." },
-  { url: "#StarHere", label: "Start Here" },
-  { url: "#FreeCourse", label: "Free Courses" },
+  { url: "#Hero", label: "zero." },
+  { url: "#roles", label: "Start Here" },
+  { url: "#courses", label: "Free Courses" },
   { url: "#ContactMe", label: "Contact Me" },
 ];
 
 function Header() {
   return (
-    <div className="mt-4 bottom-4 md:top-0 fixed mx-auto w-full z-10 h-fit text-lightgrey">
+    <div className="mt-4 bottom-4 md:top-0 fixed mx-auto w-full z-10 h-fit text-lightgrey hover:text-white">
       <nav
         className={`flex bg-invert justify-center m-auto items-center gap-8 font-semibold py-4 px-8 rounded-full w-fit bg-darkgrey`}
       >
