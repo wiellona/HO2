@@ -9,12 +9,13 @@ const navItems: NavItem[] = [
   { url: "#Hero", label: "zero." },
   { url: "#roles", label: "Start Here" },
   { url: "#courses", label: "Free Courses" },
+  { url: "#videos", label: "Videos" },
   { url: "#ContactMe", label: "Contact Me" },
 ];
 
 function Header() {
   return (
-    <div className="mt-4 bottom-4 md:top-0 fixed mx-auto w-full z-10 h-fit text-lightgrey hover:text-white">
+    <div className="pt-4 bottom-4 md:top-0 fixed mx-auto w-full z-10 h-fit text-lightgrey hover:text-white">
       <nav
         className={`flex bg-invert justify-center m-auto items-center gap-8 font-semibold py-4 px-8 rounded-full w-fit bg-darkgrey`}
       >

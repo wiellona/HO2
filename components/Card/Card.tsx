@@ -9,9 +9,10 @@ type CardProps = {
 };
 
 function Card({ thumbnail, title, description, url }: CardProps) {
+  console.log("thumb", thumbnail);
   return (
     <div className="card w-72 h-80 shadow-md rounded overflow-hidden mb-2">
-      <Image
+      <img
         src={thumbnail}
         alt={title}
         className="object-cover w-full h-36"
